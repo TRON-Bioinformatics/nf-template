@@ -1,0 +1,6 @@
+name: module_b
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bioconda::multiqc=1.21
