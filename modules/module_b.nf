@@ -3,7 +3,7 @@ process PROCESS_3 {
     label 'process_3'
     publishDir "${params.output}/merged_results", mode: 'copy'
 
-    conda ("${baseDir}/environments/module_b.yml")
+    conda ("${projectDir}/environments/module_b.yml")
 
     input:
       val(input)

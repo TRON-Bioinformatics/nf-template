@@ -3,7 +3,7 @@ process PROCESS_1 {
     tag "${name}"
     publishDir "${params.output}/${name}", mode: 'copy'
 
-    conda ("${baseDir}/environments/module_a.yml")
+    conda ("${projectDir}/environments/module_a.yml")
 
     input:
       tuple val(name), path(fastq1), path(fastq2)
@@ -22,7 +22,7 @@ process PROCESS_2 {
     tag "${name}"
     publishDir "${params.output}/${name}", mode: 'copy'
 
-    conda ("${baseDir}/environments/module_a.yml")
+    conda ("${projectDir}/environments/module_a.yml")
 
     input:
       val(name)
